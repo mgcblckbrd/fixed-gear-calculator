@@ -2,6 +2,8 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  background: url("./images/main-fon.jpg") center/cover no-repeat fixed;
+  min-block-size: 100vh;
 }
 
 h1,
@@ -17,11 +19,14 @@ h3 {
 .main {
   background-color: aquamarine;
   inline-size: 500px;
-  min-block-size: 100vh;
-  margin: 0 auto;
+  margin: 10px auto 10px;
   display: flex;
   flex-direction: column;
   padding: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
 }
 
 .main-title {
