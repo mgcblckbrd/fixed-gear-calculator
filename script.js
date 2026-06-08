@@ -12,3 +12,9 @@ function closePopup() {
 
 buttonAbout.addEventListener("click", openPopup);
 buttonClose.addEventListener("click", closePopup);
+
+document.addEventListener("keydown", (evt) => {
+  if (evt.key === "Escape") {
+    closePopup();
+  }
+});
