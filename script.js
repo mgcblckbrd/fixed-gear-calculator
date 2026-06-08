@@ -18,3 +18,9 @@ document.addEventListener("keydown", (evt) => {
     closePopup();
   }
 });
+
+popup.addEventListener('click', (evt) => {
+  if (evt.target === popup) {
+    closePopup();
+  }
+});
