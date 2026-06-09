@@ -38,8 +38,117 @@
             О калькуляторе
           </button>
         </div>
-        <div class="data-input__setup">
-          <div class="data-input__setup-set"></div>
+        <div class="calculator">
+          <h2 class="calculator__title">Параметры трансмиссии</h2>
+          <div class="calculator__body">
+            <!-- Левая колонка: элементы управления -->
+            <div class="calculator__controls">
+              <div class="control">
+                <label class="control__label" for="chainring"
+                  >Передняя звезда (Chainring)</label
+                >
+                <select class="control__select" id="chainring">
+                  <option value="28">28T</option>
+                  <option value="29">29T</option>
+                  <option value="30">30T</option>
+                  <option value="31">31T</option>
+                  <option value="32">32T</option>
+                  <option value="33">33T</option>
+                  <option value="34">34T</option>
+                  <option value="35">35T</option>
+                  <option value="36">36T</option>
+                  <option value="37">37T</option>
+                  <option value="38">38T</option>
+                  <option value="39">39T</option>
+                  <option value="40">40T</option>
+                  <option value="41">41T</option>
+                  <option value="42">42T</option>
+                  <option value="43">43T</option>
+                  <option value="44">44T</option>
+                  <option value="45">45T</option>
+                  <option value="46">46T</option>
+                  <option value="47">47T</option>
+                  <option value="48" selected>48T</option>
+                  <option value="49">49T</option>
+                  <option value="50">50T</option>
+                  <option value="51">51T</option>
+                  <option value="52">52T</option>
+                  <option value="53">53T</option>
+                  <option value="54">54T</option>
+                  <option value="55">55T</option>
+                  <option value="56">56T</option>
+                  <option value="57">57T</option>
+                  <option value="58">58T</option>
+                  <option value="59">59T</option>
+                </select>
+              </div>
+
+              <div class="control">
+                <label class="control__label" for="cog"
+                  >Задняя звезда (Cog)</label
+                >
+                <select class="control__select" id="cog">
+                  <option value="9">9T</option>
+                  <option value="10">10T</option>
+                  <option value="11">11T</option>
+                  <option value="12">12T</option>
+                  <option value="13">13T</option>
+                  <option value="14">14T</option>
+                  <option value="15">15T</option>
+                  <option value="16">16T</option>
+                  <option value="17" selected>17T</option>
+                  <option value="18">18T</option>
+                  <option value="19">19T</option>
+                  <option value="20">20T</option>
+                  <option value="21">21T</option>
+                  <option value="22">22T</option>
+                  <option value="23">23T</option>
+                </select>
+              </div>
+
+              <div class="control">
+                <label class="control__label" for="tire">Размер покрышки</label>
+                <select class="control__select" id="tire">
+                  <option value="700x23c">700×23c</option>
+                  <option value="700x25c" selected>700×25c</option>
+                  <option value="700x28c">700×28c</option>
+                  <option value="700x32c">700×32c</option>
+                  <option value="700x35c">700×35c</option>
+                  <option value="700x38c">700×38c</option>
+                  <option value="650x23c">650×23c</option>
+                </select>
+              </div>
+
+              <div class="control control--checkbox">
+                <input
+                  type="checkbox"
+                  id="ambidextrous"
+                  class="control__checkbox"
+                />
+                <label
+                  class="control__label control__label--checkbox"
+                  for="ambidextrous"
+                >
+                  Ambidextrous skid
+                </label>
+              </div>
+
+              <button type="button" class="control__btn" id="calculateBtn">
+                Рассчитать
+              </button>
+            </div>
+
+            <!-- Правая колонка: визуализация -->
+            <div class="calculator__visual">
+              <canvas
+                id="wheelCanvas"
+                class="visual__canvas"
+                width="300"
+                height="300"
+              ></canvas>
+              <p class="visual__hint">Визуализация трансмиссии</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>

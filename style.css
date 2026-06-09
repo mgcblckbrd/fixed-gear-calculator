@@ -112,3 +112,120 @@ body.no-scroll {
 .lang-switch img {
   vertical-align: middle;
 }
+
+/* ========== Калькулятор ========== */
+.calculator {
+  margin-block-start: 10px;
+}
+
+.calculator__title {
+  font-size: 20px;
+  text-align: center;
+  margin-block-end: 16px;
+}
+
+.calculator__body {
+  display: flex;
+  gap: 20px;
+}
+
+/* ========== Левая колонка ========== */
+.calculator__controls {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.control__label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+}
+
+.control__select {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.control__select:focus {
+  outline: none;
+  border-color: #333;
+}
+
+/* Чекбокс */
+.control--checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.control__checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #333;
+  cursor: pointer;
+}
+
+.control__label--checkbox {
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Кнопка */
+.control__btn {
+  margin-block-start: 8px;
+  padding: 10px 20px;
+  background-color: #111a35;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.control__btn:hover {
+  background-color: #1a2a50;
+}
+
+.control__btn:active {
+  transform: scale(0.97);
+}
+
+/* ========== Правая колонка (визуализация) ========== */
+.calculator__visual {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.visual__canvas {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.visual__hint {
+  font-size: 12px;
+  color: #999;
+  margin-block-start: 8px;
+}
