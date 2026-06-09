@@ -34,3 +34,6 @@ MIT — делайте что хотите, но указывайте автор
 - Telegram: [@mgcblckbrd](https://t.me/mgcblckbrd)
 - GitHub: [mgcblckbrd](https://github.com/mgcblckbrd)
 - GitVerse: [mgcblckbrd](https://gitverse.ru/mgcblckbrd)
+
+## Благодарности
+- Иконки флагов: [Freepik - Flaticon](https://www.flaticon.com/ru/free-icons/)

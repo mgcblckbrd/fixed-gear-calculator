@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="body">
+  <body>
     <main class="main">
       <h1 class="main-title">Skid Patch Calculator</h1>
       <p class="main-text">
@@ -22,14 +22,18 @@
       </p>
       <section class="data-input">
         <div class="data-input__setting">
-          <label class="lang-switch">
-            <input type="radio" name="lang" value="ru" checked />
-            <span>🇷🇺 RU</span>
-          </label>
-          <label class="lang-switch">
-            <input type="radio" name="lang" value="en" />
-            <span>🇬🇧 EN</span>
-          </label>
+          <div class="lang-box">
+            <label class="lang-switch">
+              <input type="radio" name="lang" value="ru" checked />
+              <img src="./images/flag-ru.png" alt="RU" width="16" height="12" />
+              <span>RU</span>
+            </label>
+            <label class="lang-switch">
+              <input type="radio" name="lang" value="en" />
+              <img src="./images/flag-us.png" alt="EN" width="16" height="12" />
+              <span>EN</span>
+            </label>
+          </div>
           <button type="button" class="about-btn" id="aboutBtn">
             О калькуляторе
           </button>
@@ -39,11 +43,11 @@
         </div>
       </section>
     </main>
+
     <div class="popup" id="aboutPopup">
       <div class="popup__content">
         <button type="button" class="popup__close" id="closePopup">✕</button>
         <h2>О калькуляторе</h2>
-
         <h3>Что это за инструмент</h3>
         <p>
           Skid Patch Calculator — это специализированный калькулятор для
@@ -52,7 +56,6 @@
           передаточное число, скорость при заданном каденсе и эквивалентные
           комбинации звёзд.
         </p>
-
         <h3>Что такое скидпатчи (skid patches)</h3>
         <p>
           На фиксе торможение часто происходит юзом — заднее колесо блокируется
@@ -66,7 +69,6 @@
           звезды. Калькулятор ищет наибольший общий делитель (НОД) и вычисляет
           количество уникальных позиций колеса при торможении.
         </p>
-
         <h3>Что такое Ambidextrous skid</h3>
         <p>
           Обычный юз выполняется одной ведущей ногой. Ambidextrous skid — это
@@ -74,7 +76,6 @@
           меняя ведущую. Это удваивает количество скидпатчей и значительно
           продлевает жизнь покрышке. Калькулятор учитывает это при расчёте.
         </p>
-
         <h3>Что считает калькулятор</h3>
         <ul>
           <li>
@@ -97,7 +98,6 @@
             скорости.
           </li>
         </ul>
-
         <h3>Как пользоваться</h3>
         <ol>
           <li>Введите количество зубьев передней звезды (chainring).</li>
@@ -112,7 +112,6 @@
           Результаты появятся мгновенно. Никакие данные не отправляются на
           сервер — всё считается прямо в браузере.
         </p>
-
         <h3>Контакты</h3>
         <ul>
           <li>
@@ -142,6 +141,7 @@
         </ul>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>

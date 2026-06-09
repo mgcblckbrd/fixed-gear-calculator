@@ -11,6 +11,7 @@ h2,
 h3 {
   font-weight: 700;
 }
+
 body.no-scroll {
   overflow: hidden;
 }
@@ -20,9 +21,8 @@ body.no-scroll {
 }
 
 .main {
-  background-color: aquamarine;
   inline-size: 500px;
-  margin: 10px auto 10px;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -72,6 +72,7 @@ body.no-scroll {
   top: 10px;
   right: 15px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .about-btn {
@@ -85,8 +86,14 @@ body.no-scroll {
 .data-input__setting {
   display: flex;
   align-items: center;
-  gap: 15px;
+  justify-content: space-between;
   margin-block-end: 20px;
+}
+
+.lang-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .lang-switch {
@@ -100,4 +107,8 @@ body.no-scroll {
 .lang-switch input[type="radio"] {
   accent-color: #333;
   cursor: pointer;
+}
+
+.lang-switch img {
+  vertical-align: middle;
 }
